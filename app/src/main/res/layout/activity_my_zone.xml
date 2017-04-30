@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:id="@+id/imgLogo"
+        android:src="@drawable/databaseicon3"
+        android:layout_gravity="left"
+        android:foregroundGravity="left"
+        android:background="@color/logoBackground"
+        android:layout_marginBottom="10dp"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.sima.finalproject.FavoriteFragment"
+        android:id="@+id/Favorite"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_favorite"
+        android:padding="5dp"
+        />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.sima.finalproject.ScheduleFragment"
+        android:id="@+id/Schedule"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_schedule"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"/>
+
+</LinearLayout>
+

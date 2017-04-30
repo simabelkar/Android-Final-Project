@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout
+    android:id="@+id/fragmentSearch"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello"
+            android:id="@+id/tvName"
+            android:layout_gravity="left"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/myZone"
+            android:id="@+id/tvMyZone"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="type Show name to look for"
+            android:id="@+id/etQuery"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.6"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/border"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+
+        <EditText
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:hint="year"
+            android:id="@+id/etYear"
+            android:layout_gravity="left"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Genre"
+                android:id="@+id/textView"
+                android:layout_gravity="bottom|left|top" />
+
+            <Spinner
+                android:id="@+id/genre_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Network"
+                android:id="@+id/textView2"
+                android:layout_gravity="bottom|left|top" />
+
+            <Spinner
+                android:id="@+id/networks_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/find"
+        android:id="@+id/btnFind"
+        android:gravity="center"
+        android:layout_gravity="bottom"/>
+
+
+</LinearLayout>

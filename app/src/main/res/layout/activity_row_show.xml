@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="5dp"
+    android:background="@color/appBackground">
+
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgVw"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        android:text="@string/notFound"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/summary" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp">
+
+        <!-- Thumbnail Image -->
+        <ImageView
+            android:id="@+id/imgVw"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            />
+
+
+        <!-- Summary -->
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgVw"
+            android:textColor="@color/summary"
+            android:textSize="@dimen/summary"
+            android:text="@string/notFound"
+
+            />
+
+    </LinearLayout>
+
+    <!-- Genre-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="2dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:id="@+id/tvGenreVal"
+            android:textColor="@color/summary"
+            android:textSize="@dimen/summary"/>
+
+    </LinearLayout>
+
+    <!--Year-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="2dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:id="@+id/tvYearVal"
+            android:textColor="@color/summary"
+            android:textSize="@dimen/summary"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:id="@+id/tvNetVal"
+            android:textColor="@color/summary"
+            android:textSize="@dimen/summary"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+    <!--Network-->
+    <!--<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="2dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:id="@+id/tvNetVal"
+            android:textColor="@color/summary"
+            android:textSize="@dimen/summary"/>
+
+    </LinearLayout>-->
+
+    <!--Schedule-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="2dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:id="@+id/tvScheduleVal"
+            android:textColor="@color/summary"
+            android:textSize="@dimen/summary"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

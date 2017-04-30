@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragmentSchedule"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="5dp"
+    android:background="@drawable/border"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titleSchdl"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/title"
+        android:textColor="@color/title"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/listViewSchdl"
+        android:layout_gravity="center_horizontal"
+        android:divider="@color/summary"/>
+
+</LinearLayout>

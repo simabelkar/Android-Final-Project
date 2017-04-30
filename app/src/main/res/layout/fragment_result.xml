@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout
+    android:id="@+id/fragmentResults"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="5dp"
+    >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="11"
+        android:rowCount="1">
+<TextView
+    android:id="@+id/tvTitle"
+    android:layout_width="210dp"
+    android:layout_height="wrap_content"
+    android:text="@string/titleRes"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="5dp"
+    android:focusable="false"
+    android:layout_columnSpan="7"
+    android:layout_column="0"
+    android:layout_gravity="center_vertical"
+    android:textSize="@dimen/title"
+    android:textColor="@color/colorPrimaryDark"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Schedule"
+            android:id="@+id/switch1"
+            android:layout_row="0"
+            android:layout_column="9"
+            android:layout_gravity="bottom|left|top"
+            android:descendantFocusability="blocksDescendants"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:numStars="1"
+            android:stepSize="1"
+            android:layout_column="10"
+            android:layout_row="0"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_gravity="left" />
+    </GridLayout>
+
+
+    <!--Genre-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Genre"
+            android:id="@+id/tvGenreTitle"
+            android:textSize="@dimen/summary"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/notFound"
+            android:id="@+id/tvGenreVal"
+            android:textColor="@color/summary"
+            android:textSize="@dimen/summary"/>
+
+    </LinearLayout>
+
+    <!--Year-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Year"
+            android:id="@+id/tvYearTitle"
+            android:textSize="@dimen/summary"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/notFound"
+            android:id="@+id/tvYearVal"
+            android:textColor="@color/summary"
+            android:textSize="@dimen/summary"
+            android:layout_marginRight="10dp"/>
+
+
+
+    </LinearLayout>
+
+    <!--Network-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Network"
+            android:id="@+id/tvNetTitle"
+            android:textSize="@dimen/summary"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/notFound"
+            android:id="@+id/tvNetVal"
+            android:textColor="@color/summary"
+            android:textSize="@dimen/summary"/>
+
+    </LinearLayout>
+
+    <!--Schedule-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Schedule"
+            android:id="@+id/tvScheduleTitle"
+            android:textSize="@dimen/summary"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/notFound"
+            android:id="@+id/tvScheduleVal"
+            android:textColor="@color/summary"
+            android:textSize="@dimen/summary"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView"
+        android:layout_gravity="center_horizontal|bottom|left|right|top"
+        android:layout_weight="0.84"
+        android:clickable="true"
+        android:background="@drawable/border"
+        android:layout_margin="2dp"
+        android:padding="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:id="@+id/btnBack"
+        android:layout_gravity="bottom|right|top"
+        android:gravity="center"
+        android:focusable="false"
+        android:layout_marginBottom="10dp"
+        />
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">All-Shows DB</string>
+    <string name="notFound">Not Found</string>
+    <string name="find">Find</string>
+    <string name="back">Back</string>
+    <string name="titleRes">Search </string>
+    <string name="titleFav">Favorite Shows:</string>
+    <string name="titleSchdl">Scheduled Shows:</string>
+    <string name="myZone"> <u>My Zone </u> </string>
+    <string name="hello">HELLO</string>
+    <string-array name="networks_array">
+        <item>NBC</item>
+        <item>CBC</item>
+        <item>HBO</item>
+        <item>Showtime</item>
+        <item>FOX</item>
+        <item>ABC</item>
+        <item>AMC</item>
+        <item>TBS</item>
+        <item>BBC Alba</item>
+        <item>USA Network</item>
+        <item>Discovery Channel</item>
+    </string-array>
+    <string-array name="genres_array">
+        <item>Comedy</item>
+        <item>Drama</item>
+        <item>Crime</item>
+        <item>History</item>
+        <item>Action</item>
+        <item>Cartoons</item>
+        <item>Travel</item>
+        <item>War</item>
+        <item>Mystery</item>
+        <item>Music</item>
+        <item>Medical</item>
+    </string-array>
+</resources>

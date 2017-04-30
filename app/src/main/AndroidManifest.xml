@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sima.finalproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label=""
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Main2DayScheduleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SearchFragment" />
+        <activity android:name=".ResultFragment" />
+        <activity android:name=".myZone" />
+        <activity android:name=".favorite_row" />
+        <activity android:name=".schedule_row" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SearchResultsActivity" />
+        <activity android:name=".SelectedShowActivity" />
+
+        <service
+            android:name=".MyIntentService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".AlarmReciever"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".RowShowActivity"></activity>
+    </application>
+
+
+
+</manifest>
